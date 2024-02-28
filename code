@@ -1,0 +1,14 @@
+nba_players = {
+    'Джеймс Харден': [2191, 2818, 2335],
+    'Леброн Джеймс': [2251, 1505, 1698],
+    'Дэмиан Лиллард': [1962, 2067, 2009],
+}
+
+# напишите ваш код здесь
+
+for person, points in nba_players.items(): 
+    nba_players[person] = int(sum(points) / len(points))
+
+
+for person, points in nba_players.items():
+    print(person, points)
