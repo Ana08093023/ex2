@@ -7,8 +7,5 @@ nba_players = {
 # напишите ваш код здесь
 
 for person, points in nba_players.items(): 
-    nba_players[person] = int(sum(points) / len(points))
-
-
-for person, points in nba_players.items():
-    print(person, points)
+    result = int(sum(points) / len(points))
+    print(person, result)
